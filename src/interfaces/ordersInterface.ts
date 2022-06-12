@@ -1,5 +1,5 @@
-export default interface IntOrder {
+export interface IntOrder {
   id: number;
   userId: number;
-  productsIds: number[]
+  teste: number;
 }
