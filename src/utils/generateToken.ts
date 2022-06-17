@@ -1,4 +1,4 @@
-import jwt from 'jsonwebtoken';
+import jwt, { SignOptions } from 'jsonwebtoken';
 import dotenv from 'dotenv';
 import { IntUser } from '../interfaces/usersInterface';
 
@@ -6,7 +6,7 @@ dotenv.config();
 
 const minhaSenha = process.env.JWT_SECRET || 'suaSenhaSecreta';
 
-const jwtConfig: object = {
+const jwtConfig: SignOptions = {
   expiresIn: '10d',
   algorithm: 'HS256',
 };
